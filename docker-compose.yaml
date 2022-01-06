@@ -6,5 +6,5 @@ services:
     network_mode: host
     restart: always
     volumes:
-      - /mnt/usb1/Videos:/opt/Videos
-      - /mnt/usb1/Music:/opt/Music
+      - /mnt/usb1/Videos:/opt/Videos   #Change the voulme mount
+      - /mnt/usb1/Music:/opt/Music     #Change the voulme mount
