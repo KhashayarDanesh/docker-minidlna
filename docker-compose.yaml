@@ -1,0 +1,10 @@
+version: '3'
+services:
+  minidlna:
+    image: khashayardanesh/minidlna-docker:latest
+    container_name: minidlna-docker
+    network_mode: host
+    restart: always
+    volumes:
+      - /mnt/usb1/Videos:/opt/Videos
+      - /mnt/usb1/Music:/opt/Music
