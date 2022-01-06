@@ -26,4 +26,10 @@ If you want to overwrite a config file:
       -v <PATH_TO_VIDEOS_DIR>:/opt/Videos \
       -v <PATH_TO_PICUTRES_DIR>:/opt/Pictures \
       -v <PATH_TO_CONFIG_DIR>/minidlna.conf:/etc/minidlna.conf \
-      geekduck/minidlna
+      khashayardanesh/minidlna
+
+## Build
+
+```bash
+docker buildx build --tag khashayardanesh/minidlna:latest --platform linux/arm64,linux/amd64 . 
+```
